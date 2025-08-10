@@ -1,0 +1,389 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Nodewiz.ai - Professional AI Automation Services | n8n Workflow Experts{% endblock %}
+{% block meta_description %}Transform your business with professional AI automation services. Custom n8n workflows, intelligent agents, and managed automation that reduce costs by 60%. Free consultation available.{% endblock %}
+{% block meta_keywords %}AI automation services, n8n automation, workflow automation, business automation, custom integrations, AI agents, automation consulting, process optimization, automation experts{% endblock %}
+
+{% block og_title %}Nodewiz.ai - Professional AI Automation Services{% endblock %}
+{% block og_description %}Transform your business with professional AI automation services. Custom n8n workflows that reduce costs by 60% and boost productivity.{% endblock %}
+{% block og_type %}website{% endblock %}
+
+{% block twitter_title %}Nodewiz.ai - AI Automation Services{% endblock %}
+{% block twitter_description %}Professional AI automation services with custom n8n workflows. Reduce costs, boost productivity, automate your business.{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "AI Automation Services - Nodewiz.ai",
+    "description": "Professional AI automation services with custom n8n workflows. Transform your business with intelligent automations that reduce costs and boost productivity.",
+    "url": "{{ request.build_absolute_uri }}",
+    "mainEntity": {
+        "@type": "Service",
+        "name": "AI Automation Services",
+        "description": "Custom workflow automation, AI agents, and managed automation solutions",
+        "provider": {
+            "@type": "Organization",
+            "name": "Nodewiz.ai"
+        },
+        "areaServed": "Worldwide",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Automation Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Custom Workflow Automation",
+                        "description": "Bespoke automation workflows tailored to your business needs"
+                    },
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "priceCurrency": "USD",
+                        "price": "2500",
+                        "unitText": "per workflow"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Managed Automation Services",
+                        "description": "Complete automation management with 24/7 monitoring and support"
+                    },
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "priceCurrency": "USD", 
+                        "price": "995",
+                        "unitText": "per month"
+                    }
+                }
+            ]
+        }
+    }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-modern">
+    <div class="container-xl">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <div class="hero-badge mb-4">
+                        <span class="badge-pill">
+                            <i class="fas fa-bolt me-2"></i>
+                            Next-Gen Automation Platform
+                        </span>
+                    </div>
+                    <h1 class="hero-title mb-4">
+                        Build <span class="text-gradient">AI agents</span> that automate your entire workflow
+                    </h1>
+                    <p class="hero-subtitle mb-5">
+                        We design multi-step agentic workflows, integrate your tools, and deploy reliable automation — on-premise or cloud. No vendor lock-in.
+                    </p>
+                    <div class="hero-cta-group mb-5">
+                        <a href="{% url 'contact' %}" class="btn btn-primary-glass btn-lg me-3">
+                            <i class="fas fa-rocket me-2"></i>
+                            Start Building
+                        </a>
+                        <a href="{% url 'services' %}" class="btn btn-outline-glass btn-lg">
+                            <i class="fas fa-play me-2"></i>
+                            Watch Demo
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="row g-4">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number">90%</div>
+                                    <div class="stat-label">Time Saved</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Workflows</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <div class="stat-number">99.9%</div>
+                                    <div class="stat-label">Uptime</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-visual">
+                    <div class="automation-nodes">
+                        <div class="node-card node-1">
+                            <i class="fab fa-slack"></i>
+                            <span>Slack</span>
+                        </div>
+                        <div class="node-card node-2">
+                            <i class="fas fa-database"></i>
+                            <span>Database</span>
+                        </div>
+                        <div class="node-card node-3">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="node-card node-4">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </div>
+                        <div class="node-card node-5 central-node">
+                            <i class="fas fa-bolt"></i>
+                            <span>AI Agent</span>
+                        </div>
+                        <div class="connection-lines">
+                            <svg viewBox="0 0 400 300" class="connections">
+                                <path d="M50,50 Q200,150 350,50" class="connection-path" />
+                                <path d="M50,250 Q200,150 350,250" class="connection-path" />
+                                <path d="M200,50 L200,250" class="connection-path" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-indicator">
+        <div class="scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Trusted By Section -->
+<section class="trusted-by py-5">
+    <div class="container-xl">
+        <div class="text-center mb-4">
+            <p class="text-muted small">Trusted by innovative teams worldwide</p>
+        </div>
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="company-logo">Microsoft</div>
+                <div class="company-logo">Shopify</div>
+                <div class="company-logo">Notion</div>
+                <div class="company-logo">Stripe</div>
+                <div class="company-logo">GitLab</div>
+                <div class="company-logo">Zendesk</div>
+                <div class="company-logo">Slack</div>
+                <div class="company-logo">HubSpot</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section py-5">
+    <div class="container-xl">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-3">Why teams choose Nodewiz.ai</h2>
+                <p class="section-subtitle">Build, deploy, and scale AI automations with enterprise-grade reliability</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4 class="feature-title">Lightning Fast Setup</h4>
+                    <p class="feature-description">Deploy automation workflows in minutes, not months. Quick setup with immediate results and real-time monitoring.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="feature-title">Enterprise Security</h4>
+                    <p class="feature-description">Bank-grade security with end-to-end encryption. Your data stays protected with 99.9% uptime guarantee.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h4 class="feature-title">Universal Integration</h4>
+                    <p class="feature-description">Connect 500+ tools and platforms seamlessly. No disruption to your existing workflow infrastructure.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4 class="feature-title">Smart AI Agents</h4>
+                    <p class="feature-description">Multi-step agents that learn and adapt. Handle complex workflows with human-like decision making.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4 class="feature-title">Real-time Analytics</h4>
+                    <p class="feature-description">Track performance with detailed insights. See immediate cost savings and productivity improvements.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4 class="feature-title">Cloud or On-Premise</h4>
+                    <p class="feature-description">Deploy anywhere with full control. Self-hosted or managed cloud solutions to fit your security needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works py-5">
+    <div class="container-xl">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-3">How it works</h2>
+                <p class="section-subtitle">From idea to production in three simple steps</p>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h4 class="step-title">Design Your Workflow</h4>
+                    <p class="step-description">Use our visual builder or describe your workflow in plain English. Our AI helps you design the perfect automation.</p>
+                    <div class="step-visual">
+                        <i class="fas fa-sitemap fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h4 class="step-title">Connect Your Tools</h4>
+                    <p class="step-description">Integrate with your existing stack in seconds. We handle the complex API connections and data transformations.</p>
+                    <div class="step-visual">
+                        <i class="fas fa-link fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h4 class="step-title">Deploy & Scale</h4>
+                    <p class="step-description">Launch your automation with one click. Monitor performance and scale automatically as your business grows.</p>
+                    <div class="step-visual">
+                        <i class="fas fa-rocket fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5">
+    <div class="container-xl">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-3">What our customers say</h2>
+                <p class="section-subtitle">Join thousands of teams who've transformed their workflows</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "Nodewiz.ai transformed our lead management completely. 65% increase in conversion rates and our sales team now focuses on high-value activities."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Sarah Chen</strong>
+                        <span>VP of Sales, TechStart</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "The invoice automation has been a game-changer. 80% reduction in processing time and virtually eliminated manual errors. ROI in the first month."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Marcus Rodriguez</strong>
+                        <span>CFO, GlobalTrade</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "Outstanding support and seamless integration. They understood our complex requirements and delivered a solution that works flawlessly."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Lisa Park</strong>
+                        <span>CTO, HealthTech Pro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+    <div class="container-xl">
+        <div class="cta-card">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="cta-title mb-3">Ready to automate your workflow?</h2>
+                    <p class="cta-subtitle mb-0">Join thousands of teams who've already transformed their operations with AI automation.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="{% url 'contact' %}" class="btn btn-primary-glass btn-lg me-3">
+                        <i class="fas fa-calendar me-2"></i>
+                        Book a Demo
+                    </a>
+                    <a href="{% url 'services' %}" class="btn btn-outline-glass btn-lg">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

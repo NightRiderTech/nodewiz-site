@@ -1,0 +1,300 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Client Testimonials - Nodewiz.ai{% endblock %}
+{% block meta_description %}Read success stories and testimonials from businesses that have transformed their operations with Nodewiz.ai's automation solutions.{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="page-hero">
+    <div class="container-xl">
+        <div class="row align-items-center min-vh-50">
+            <div class="col-lg-8 mx-auto text-center">
+                <div class="eyebrow mb-3">Results at scale</div>
+                <h1 class="display-4 fw-bold mb-3">
+                    What our <span class="text-gradient">customers say</span>
+                </h1>
+                <p class="lead opacity-75 mb-0">
+                    Real teams. Real automations. Real ROI.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Testimonials -->
+<section class="testimonials-section py-5">
+    <div class="container-xl">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-3">Customer Success Stories</h2>
+                <p class="section-subtitle">Discover how businesses across industries have transformed with intelligent automation</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            {% if testimonials %}
+                {% for testimonial in testimonials %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            {% for i in "12345" %}
+                                {% if forloop.counter <= testimonial.rating %}
+                                    <i class="fas fa-star"></i>
+                                {% else %}
+                                    <i class="far fa-star"></i>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "{{ testimonial.testimonial_text }}"
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>{{ testimonial.client_name }}</strong>
+                            <span>
+                                {% if testimonial.position %}{{ testimonial.position }}, {% endif %}{{ testimonial.company }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <!-- Placeholder testimonials when no data exists -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Nodewiz.ai transformed our lead management process completely. We've seen a 65% increase 
+                            in conversion rates and our sales team is now focusing on high-value activities instead 
+                            of manual data entry."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Jennifer Walsh</strong>
+                            <span>VP of Sales, TechStart Inc.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "The invoice automation solution has been a game-changer. We've reduced processing time 
+                            by 80% and eliminated virtually all manual errors. The ROI was evident within the first month."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Marcus Rodriguez</strong>
+                            <span>CFO, GlobalTrade Solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Working with Nodewiz.ai was seamless. They understood our complex requirements and 
+                            delivered a solution that integrates perfectly with our existing systems. Outstanding support!"
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Sarah Kim</strong>
+                            <span>Operations Director, HealthCare Plus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "The team's expertise in n8n is exceptional. They've automated our entire customer 
+                            onboarding process, reducing setup time from days to hours. Our customers love the faster service."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>David Chen</strong>
+                            <span>CEO, FinanceFlow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Nodewiz.ai's managed services ensure our automations run flawlessly 24/7. The performance 
+                            reports help us continuously optimize, and their proactive support prevents issues before they occur."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Lisa Thompson</strong>
+                            <span>IT Director, RetailMax</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "The social media automation has freed up hours of our marketing team's time daily. 
+                            Our engagement rates have increased 35% and content consistency has dramatically improved."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <strong>Alex Morgan</strong>
+                            <span>Marketing Manager, CreativeCo</span>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<!-- Success Metrics -->
+<section class="features-section py-5">
+    <div class="container-xl">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-3">Client Success by the Numbers</h2>
+                <p class="section-subtitle">Real results from real businesses using our automation solutions</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card metric-card text-center">
+                    <div class="feature-icon mx-auto mb-3">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Happy Clients</div>
+                    <small class="text-muted">Across 25+ industries</small>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card metric-card text-center">
+                    <div class="feature-icon mx-auto mb-3">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number">5M+</div>
+                    <div class="stat-label">Hours Saved</div>
+                    <small class="text-muted">Through automation</small>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card metric-card text-center">
+                    <div class="feature-icon mx-auto mb-3">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-number">$2.5M+</div>
+                    <div class="stat-label">Cost Savings</div>
+                    <small class="text-muted">Generated for clients</small>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card metric-card text-center">
+                    <div class="feature-icon mx-auto mb-3">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-label">Client Rating</div>
+                    <small class="text-muted">Average satisfaction score</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Testimonials Section -->
+<section class="py-5">
+    <div class="container-xl">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-3">Video Testimonials</h2>
+                <p class="section-subtitle">Hear directly from our clients about their automation success stories</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="feature-card video-testimonial">
+                    <div class="video-placeholder text-center">
+                        <div class="feature-icon mx-auto mb-3">
+                            <i class="fas fa-play-circle fa-5x"></i>
+                        </div>
+                        <h4 class="feature-title">TechStart Inc. Success Story</h4>
+                        <p class="feature-description">How automation transformed their sales process</p>
+                        <button class="btn btn-primary-glass">Watch Video</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-card video-testimonial">
+                    <div class="video-placeholder text-center">
+                        <div class="feature-icon mx-auto mb-3">
+                            <i class="fas fa-play-circle fa-5x"></i>
+                        </div>
+                        <h4 class="feature-title">HealthCare Plus Case Study</h4>
+                        <p class="feature-description">Streamlining patient data management</p>
+                        <button class="btn btn-primary-glass">Watch Video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5">
+    <div class="container-xl">
+        <div class="cta-card">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="cta-title mb-3">Ready to Join Our Success Stories?</h2>
+                    <p class="cta-subtitle mb-0">
+                        Discover how automation can transform your business operations and deliver measurable results.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="{% url 'contact' %}" class="btn btn-primary-glass btn-lg">
+                        <i class="fas fa-rocket me-2"></i>Start Your Journey
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

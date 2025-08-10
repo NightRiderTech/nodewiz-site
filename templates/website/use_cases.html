@@ -1,0 +1,378 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Use Cases - Nodewiz.ai{% endblock %}
+{% block meta_description %}Discover real-world automation use cases and success stories. See how businesses transform operations with CRM automation, invoice processing, and more.{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="page-hero">
+    <div class="container-xl">
+        <div class="row align-items-center min-vh-50">
+            <div class="col-lg-8 mx-auto text-center">
+                <div class="eyebrow mb-3">Proven outcomes</div>
+                <h1 class="display-4 fw-bold mb-3">
+                    Automation that <span class="text-gradient">moves the needle</span>
+                </h1>
+                <p class="lead opacity-75 mb-0">
+                    Explore how AI workflows deliver faster cycles, fewer errors, and happier teams.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Use Cases -->
+<section class="py-5">
+    <div class="container-xl">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-3">Real-World Success Stories</h2>
+                <p class="section-subtitle">See how businesses across industries transform with intelligent automation</p>
+            </div>
+        </div>
+        
+        <div class="row g-5">
+            <!-- CRM Automation -->
+            <div class="col-lg-6">
+                <div class="feature-card use-case-detail">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">CRM Lead Management Automation</h3>
+                    <p class="feature-description mb-4">
+                        Automatically capture leads from multiple sources, qualify prospects, 
+                        and trigger personalized follow-up sequences.
+                    </p>
+                    
+                    <div class="workflow-steps mb-4">
+                        <h5 class="fw-bold mb-3">Automated Workflow:</h5>
+                        <div class="step-item mb-2">
+                            <i class="fas fa-arrow-right text-primary me-2"></i>
+                            Lead capture from website, email, social media
+                        </div>
+                        <div class="step-item mb-2">
+                            <i class="fas fa-arrow-right text-primary me-2"></i>
+                            Automatic lead scoring and qualification
+                        </div>
+                        <div class="step-item mb-2">
+                            <i class="fas fa-arrow-right text-primary me-2"></i>
+                            CRM data enrichment and categorization
+                        </div>
+                        <div class="step-item mb-2">
+                            <i class="fas fa-arrow-right text-primary me-2"></i>
+                            Personalized email sequences and notifications
+                        </div>
+                        <div class="step-item mb-2">
+                            <i class="fas fa-arrow-right text-primary me-2"></i>
+                            Sales team alerts for hot prospects
+                        </div>
+                    </div>
+                    
+                    <div class="results-metrics">
+                        <h5 class="fw-bold mb-3">Results Achieved:</h5>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="metric-card text-center">
+                                    <div class="stat-number text-success">↑65%</div>
+                                    <div class="stat-label">Lead Conversion</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="metric-card text-center">
+                                    <div class="stat-number text-success">↓75%</div>
+                                    <div class="stat-label">Response Time</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="metric-card text-center">
+                                    <div class="stat-number text-success">↑40%</div>
+                                    <div class="stat-label">Sales Productivity</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invoice Processing -->
+            <div class="col-lg-6">
+                <div class="feature-card use-case-detail">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="feature-title">Automated Invoice Processing</h3>
+                    <p class="feature-description mb-4">
+                        Streamline invoice generation, approval workflows, payment tracking, 
+                        and accounting integration for seamless financial operations.
+                    </p>
+                    
+                    <div class="workflow-steps mb-4">
+                        <h5 class="fw-bold mb-3">Automated Workflow:</h5>
+                        <div class="step-item mb-2">
+                            <i class="fas fa-arrow-right text-success me-2"></i>
+                            Project completion triggers invoice generation
+                        </div>
+                        <div class="step-item mb-2">
+                            <i class="fas fa-arrow-right text-success me-2"></i>
+                            Automatic approval routing based on amount
+                        </div>
+                        <div class="step-item mb-2">
+                            <i class="fas fa-arrow-right text-success me-2"></i>
+                            Client delivery via email with payment links
+                        </div>
+                        <div class="step-item mb-2">
+                            <i class="fas fa-arrow-right text-success me-2"></i>
+                            Payment status tracking and reminders
+                        </div>
+                        <div class="step-item mb-2">
+                            <i class="fas fa-arrow-right text-success me-2"></i>
+                            Accounting system synchronization
+                        </div>
+                    </div>
+                    
+                    <div class="results-metrics">
+                        <h5 class="fw-bold mb-3">Results Achieved:</h5>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="metric-card text-center">
+                                    <div class="stat-number text-success">↓80%</div>
+                                    <div class="stat-label">Processing Time</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="metric-card text-center">
+                                    <div class="stat-number text-success">↓95%</div>
+                                    <div class="stat-label">Manual Errors</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="metric-card text-center">
+                                    <div class="stat-number text-success">↑30%</div>
+                                    <div class="stat-label">Payment Speed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- More Use Cases Grid -->
+<section class="features-section py-5">
+    <div class="container-xl">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-3">More Automation Success Stories</h2>
+                <p class="section-subtitle">Explore additional use cases across different business functions</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <!-- Email Marketing -->
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4 class="feature-title">Email Marketing Automation</h4>
+                    <p class="feature-description mb-3">
+                        Personalized email campaigns based on user behavior, preferences, and engagement history.
+                    </p>
+                    <div class="metrics mb-3">
+                        <small class="text-success fw-bold">↑ 45% Open Rates</small><br>
+                        <small class="text-success fw-bold">↑ 60% Click-through</small>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="badge bg-light text-dark me-1">Mailchimp</span>
+                        <span class="badge bg-light text-dark me-1">HubSpot</span>
+                        <span class="badge bg-light text-dark">Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HR Onboarding -->
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h4 class="feature-title">Employee Onboarding</h4>
+                    <p class="feature-description mb-3">
+                        Automated onboarding workflows for new employees including document collection and system setup.
+                    </p>
+                    <div class="metrics mb-3">
+                        <small class="text-success fw-bold">↓ 70% Setup Time</small><br>
+                        <small class="text-success fw-bold">↑ 90% Completion Rate</small>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="badge bg-light text-dark me-1">BambooHR</span>
+                        <span class="badge bg-light text-dark me-1">Slack</span>
+                        <span class="badge bg-light text-dark">G Suite</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inventory Management -->
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h4 class="feature-title">Inventory Management</h4>
+                    <p class="feature-description mb-3">
+                        Real-time inventory tracking with automatic reorder points and supplier notifications.
+                    </p>
+                    <div class="metrics mb-3">
+                        <small class="text-success fw-bold">↓ 50% Stockouts</small><br>
+                        <small class="text-success fw-bold">↓ 25% Holding Costs</small>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="badge bg-light text-dark me-1">Shopify</span>
+                        <span class="badge bg-light text-dark me-1">WooCommerce</span>
+                        <span class="badge bg-light text-dark">ERP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h4 class="feature-title">Social Media Management</h4>
+                    <p class="feature-description mb-3">
+                        Content scheduling, engagement monitoring, and cross-platform posting automation.
+                    </p>
+                    <div class="metrics mb-3">
+                        <small class="text-success fw-bold">↑ 200% Posting Efficiency</small><br>
+                        <small class="text-success fw-bold">↑ 35% Engagement</small>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="badge bg-light text-dark me-1">Buffer</span>
+                        <span class="badge bg-light text-dark me-1">Hootsuite</span>
+                        <span class="badge bg-light text-dark">Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Support -->
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4 class="feature-title">Customer Support</h4>
+                    <p class="feature-description mb-3">
+                        Ticket routing, automated responses, and escalation workflows for improved support efficiency.
+                    </p>
+                    <div class="metrics mb-3">
+                        <small class="text-success fw-bold">↓ 60% Response Time</small><br>
+                        <small class="text-success fw-bold">↑ 85% Satisfaction</small>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="badge bg-light text-dark me-1">Zendesk</span>
+                        <span class="badge bg-light text-dark me-1">Intercom</span>
+                        <span class="badge bg-light text-dark">Slack</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Backup -->
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="feature-title">Data Backup & Security</h4>
+                    <p class="feature-description mb-3">
+                        Automated data backups, security monitoring, and compliance reporting across systems.
+                    </p>
+                    <div class="metrics mb-3">
+                        <small class="text-success fw-bold">↑ 99.9% Uptime</small><br>
+                        <small class="text-success fw-bold">100% Compliance</small>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="badge bg-light text-dark me-1">AWS</span>
+                        <span class="badge bg-light text-dark me-1">Google Cloud</span>
+                        <span class="badge bg-light text-dark">Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Industry Applications -->
+<section class="py-5">
+    <div class="container-xl">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-3">Industries We Serve</h2>
+                <p class="section-subtitle">Automation solutions tailored for your industry's unique needs</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card industry-card text-center">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h4 class="feature-title">E-commerce</h4>
+                    <p class="feature-description">Order processing, inventory sync, customer communications</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card industry-card text-center">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h4 class="feature-title">Healthcare</h4>
+                    <p class="feature-description">Patient data management, appointment scheduling, compliance</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card industry-card text-center">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h4 class="feature-title">Finance</h4>
+                    <p class="feature-description">Transaction processing, risk assessment, reporting</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-card industry-card text-center">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h4 class="feature-title">Real Estate</h4>
+                    <p class="feature-description">Lead qualification, document processing, client management</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+    <div class="container-xl">
+        <div class="cta-card">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="cta-title mb-3">Want to See Your Use Case Here?</h2>
+                    <p class="cta-subtitle mb-0">
+                        Let's discuss how automation can transform your specific business processes and deliver measurable results.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="{% url 'contact' %}" class="btn btn-primary-glass btn-lg">
+                        <i class="fas fa-lightbulb me-2"></i>Discuss Your Use Case
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

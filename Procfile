@@ -1,0 +1,1 @@
+web: gunicorn nodewiz.wsgi --log-file -

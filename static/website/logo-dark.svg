@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="32" viewBox="0 0 140 32" fill="none">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon -->
+  <g transform="translate(0, 4)">
+    <rect x="0" y="0" width="24" height="24" rx="6" fill="url(#logoGradient)" opacity="0.1"/>
+    <path d="M12 2L20 6v12l-8 4-8-4V6l8-4z" stroke="url(#logoGradient)" stroke-width="2" fill="none"/>
+    <circle cx="12" cy="12" r="2.5" fill="url(#logoGradient)"/>
+    <circle cx="12" cy="12" r="1" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="32" y="21" font-family="Sora, sans-serif" font-size="16" font-weight="700" fill="#e5e7eb">
+    Nodewiz
+  </text>
+  <text x="105" y="21" font-family="Sora, sans-serif" font-size="12" font-weight="600" fill="url(#logoGradient)">
+    .ai
+  </text>
+</svg>
