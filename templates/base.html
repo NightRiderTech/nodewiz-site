@@ -18,7 +18,21 @@
     <meta name="rating" content="general">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="{% block canonical_url %}{{ request.build_absolute_uri }}{% endblock %}">
+    <link rel="canonical" href="{% block canonical_url %}https://www.nodewiz.ai{{ request.path }}{% endblock %}">
+        <!-- Organization Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Nodewiz.ai",
+            "url": "https://www.nodewiz.ai/",
+            "logo": "https://www.nodewiz.ai/static/website/logo-dark.svg",
+            "sameAs": [
+                "https://twitter.com/nodewizai"
+            ],
+            "description": "Professional AI automation services with custom n8n workflows. We design, build and manage intelligent automations that reduce costs by 60% and boost productivity."
+        }
+        </script>
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="{% block og_title %}Nodewiz.ai - AI-Powered Workflow Automation Services{% endblock %}">
@@ -148,8 +162,6 @@
     {% block structured_data %}{% endblock %}
 </head>
 <body>
-    <!-- Skip to content link for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Background Orbs / Mesh -->
     <div class="bg-orbs" aria-hidden="true">
