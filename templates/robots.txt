@@ -1,24 +1,30 @@
 User-agent: *
 Allow: /
 
-# Important pages
+# Explicitly allow important pages
 Allow: /services/
 Allow: /use-cases/
 Allow: /about/
 Allow: /contact/
 Allow: /testimonials/
-
-# Static files
 Allow: /static/
 
-# Disallow admin and unnecessary paths
+# Disallow sensitive or duplicate content
 Disallow: /admin/
 Disallow: /staticfiles/
 Disallow: /*.json$
 Disallow: /media/private/
 
-# Crawl-delay (optional)
+# Googlebot specific rules (optional, for better control)
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /staticfiles/
+Disallow: /*.json$
+Disallow: /media/private/
+
+# Crawl-delay for all bots (optional, adjust as needed)
 Crawl-delay: 1
 
-# Sitemap location
-Sitemap: {{ request.scheme }}://{{ request.get_host }}/sitemap.xml
+# Sitemap location (canonical domain)
+Sitemap: https://www.nodewiz.ai/sitemap.xml
