@@ -23,7 +23,7 @@ ALLOWED_HOSTS = [
     '.herokuapp.com',
     'nodewiz-ai.herokuapp.com',
     'nodewiz.ai',
-    'https://www.nodewiz.ai/'
+    'www.nodewiz.ai'
 ]
 
 # Application definition
