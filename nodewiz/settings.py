@@ -21,7 +21,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1', 
     '*.herokuapp.com',
     '.herokuapp.com',
-    'nodewiz-ai.herokuapp.com'
+    'nodewiz-ai.herokuapp.com',
+    'nodewiz.ai'
 ]
 
 # Application definition
