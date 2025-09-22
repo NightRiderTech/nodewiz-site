@@ -89,7 +89,7 @@ def create_env_file():
 # Django Settings
 DEBUG=True
 SECRET_KEY=django-insecure-change-this-in-production
-ALLOWED_HOSTS=localhost,127.0.0.1
+ALLOWED_HOSTS=localhost,127.0.0.1,nodewiz.ai
 
 # Database (for production)
 # DATABASE_URL=postgres://user:pass@localhost:5432/dbname
